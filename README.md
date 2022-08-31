@@ -10,7 +10,7 @@ Built to be modular - works via a stack of 'sub-providers' which are like normal
 
 The subproviders can emit new rpc requests in order to handle their own;  e.g. `eth_call` may trigger `eth_getAccountBalance`, `eth_getCode`, and others.
 The provider engine also handles caching of rpc request results.
-
+ 
 ```js
 const ProviderEngine = require('web3-provider-engine')
 const CacheSubprovider = require('web3-provider-engine/subproviders/cache.js')
